@@ -1,0 +1,45 @@
+<html ng-app="twitterApp">
+
+<head>
+    <link rel="stylesheet" href="content/css/bootstrap.css">
+    <link rel="stylesheet" href="content/css/bootstrap.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!-- refer jquery-->
+    <!--<script src="vendor/jquery-2.2.0.js"></script>-->
+    <script src="vendor/bootstrap.js"></script>
+    <script src="vendor/angular.js"></script>
+    <script src="vendor/angular-ui-router.js"></script>
+</head>
+
+<body ng-controller="mainCtrl">
+    <div class="container">
+        <div ng-include="headerUrl">
+
+        </div>
+        <div ui-view></div>
+        <!--  <div custom-header>
+            <h1>Hey i am the original Contnet</h1>
+        </div>-->
+
+    </div>
+    <!--login-Module-->
+    <script src="app/login/login.js"></script>
+    <!--tweets-module-->
+    <script src="app/tweets/tweets.js"></script>
+    <script src="app/tweets/tweets-service.js"></script>
+    <script src="app/tweets/tweets-controller.js"></script>
+    <!--registe module-->
+    <script src="app/register/register.js"></script>
+    <script src="app/register/registerCtrl.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/common/validationConstants.js"></script>
+    <script src="app/common/tab-service.js"></script>
+    <script src="app/common/mainCtrl.js"></script>
+    <script src="app/common/phoneformatter.js"></script>
+    <script src="app/components/customHeader.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<form class="form-horizontal" name="registerForm">
+    <div class="form-group">
+        <label class="control-label col-xs-2">First Name</label>
+        <div class="col-xs-4">
+
+            <input type="text" class="form-control" placeholder="First Name" name="firstname" ng-model="registerUser.FirstName" ng-minlength="3" ng-maxlength="10" required ng-pattern="/^[a-zA-Z ]*$/">
+
+            <span ng-show="registerForm.firstname.$error.required && registerForm.firstname.$dirty">{{validations.firstNameReqValidator}}</span>
+            <span ng-show="registerForm.firstname.$error.minlength && registerForm.firstname.$dirty">Minimum length is 3</span>
+            <span ng-show="registerForm.firstname.$error.maxlength && registerForm.firstname.$dirty">Maxlength length is 10</span>
+            <span ng-show="registerForm.firstname.$error.pattern && registerForm.firstname.$dirty">Name cannot contain numbers and special characters</span>
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-2">Last Name</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" placeholder="Last Name" name="lastName" ng-model="registerUser.LastName">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-2">DOB</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" placeholder="DOB" ng-model="registerUser.DOB" custom-date-picker>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-2">Gender</label>
+        <div class="col-xs-4">
+            <input type="radio" value="M" ng-model="registerUser.Gender">M
+            <input type="radio" value="F" ng-model="registerUser.Gender">F
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-2">Country</label>
+        <div class="col-xs-4">
+            <select class="form-control" ng-model="selectedCountry" ng-options=" country.name group by country.continent for country in countries">
+                <option value="">Please Select</option>
+            </select>{{selectedCountry}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-2">Phone Number</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" ng-model="registerUser.PhoneNumber">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-2">Street Name</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" placeholder="Street Name" ng-model="registerUser.StreetName">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-2">Zipcode</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" placeholder="Zip code" ng-model="registerUser.ZipCode">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="registerUser.Agree"> Agree Terms and Conditions</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-4">
+            <button class="btn btn-primary" ng-click="userRegistration()">Register</button>
+        </div>
+    </div>
+</form>

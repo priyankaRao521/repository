@@ -1,0 +1,18 @@
+{
+    "tabs": [
+        {
+            "name": "Login",
+            "template": "app/login/login.tpl.html"
+      },
+        {
+
+            "name": "Register",
+            "template": "app/register/register.tpl.html"
+      },
+        {
+
+            "name": "Tweets",
+            "template": "app/tweets/tweet.tpl.html"
+      }
+   ]
+}

@@ -1,0 +1,61 @@
+{
+    "tweets": [
+        {
+            "tweetText": "I am about Angularjs",
+            "tweetedBy": "Kiran",
+            "tweetedDate": "2012-04-23T18:25:43.511Z",
+            "phoneNumber": "9959688870"
+
+        },
+        {
+            "tweetText": "I am about Knockoutjs",
+            "tweetedBy": "Ravi",
+            "tweetedDate": "2012-12-23T18:25:43.511Z",
+            "phoneNumber": "9959688871"
+    },
+        {
+            "tweetText": "I am about Knockoutjs",
+            "tweetedBy": "Ravi",
+            "tweetedDate": "2013-06-24T18:25:43.511Z",
+            "phoneNumber": "3333333333"
+    },
+        {
+            "tweetText": "I am about Angularjs",
+            "tweetedBy": "Kiran",
+            "tweetedDate": "2016-01-23T18:25:43.511Z",
+            "phoneNumber": "9959689871"
+        },
+        {
+            "tweetText": "I am about Knockoutjs",
+            "tweetedBy": "Ravi",
+
+            "tweetedDate": "2016-01-23T18:25:43.511Z",
+            "phoneNumber": "9898989898"
+    },
+        {
+            "tweetText": "I am about Knockoutjs",
+            "tweetedBy": "Ravi",
+            "tweetedDate": "2016-01-23T18:25:43.511Z",
+            "phoneNumber": "1234567890"
+    },
+        {
+            "tweetText": "I am about .net",
+            "tweetedBy": "Kiran",
+            "tweetedDate": "2016-01-23T18:25:43.511Z",
+            "phoneNumber": "1234576098"
+
+        },
+        {
+            "tweetText": "I am about Java",
+            "tweetedBy": "Optimus",
+            "tweetedDate": "2016-01-23T18:25:43.511Z",
+            "phoneNumber": "9898989898"
+    },
+        {
+            "tweetText": "I am about Hybris",
+            "tweetedBy": "Zurai",
+            "tweetedDate": "2016-01-23T18:25:43.511Z",
+            "phoneNumber": "9898989898"
+    }
+    ]
+}
